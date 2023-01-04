@@ -23,7 +23,6 @@ class _SignInPageState extends State<SignInPage> {
     Size size = MediaQuery.of(context).size;
     return Observer(
       builder: (_) => Scaffold(
-        resizeToAvoidBottomInset: false,
         backgroundColor: purple,
         body: SingleChildScrollView(
           child: Column(

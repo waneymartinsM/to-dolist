@@ -27,7 +27,6 @@ class _RegisterPageState extends State<RegisterPage> {
     Size size = MediaQuery.of(context).size;
     return Observer(
       builder: (_) => Scaffold(
-        resizeToAvoidBottomInset: false,
         backgroundColor: purple,
         body: loading == true
             ? const Center(
