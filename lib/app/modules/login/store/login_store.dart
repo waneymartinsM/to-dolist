@@ -49,12 +49,8 @@ abstract class LoginStoreBase with Store {
         Modular.to.navigate('/home');
       }
     } else {
-      alertDialog(
-        context,
-        AlertType.info,
-        "ATENÇÃO",
-        "Preencha todos os campos para prosseguirmos!",
-      );
+      alertDialog(context, AlertType.info, "ATENÇÃO",
+          "Preencha todos os campos para prosseguirmos!");
     }
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:todolist/app/model/todo.dart';
 import 'package:todolist/app/modules/home/store/home_store.dart';
 import 'package:todolist/app/utils/colors.dart';
@@ -26,11 +27,9 @@ class AddTaskList extends StatelessWidget {
     return Form(
       key: _formKey,
       child: AlertDialog(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20),
-        ),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
         backgroundColor: lightPurple,
-        title: Text(action),
+        title: Text(action, style: GoogleFonts.montserrat()),
         content: TextFormField(
           maxLength: 65,
           validator: (text) {
@@ -41,11 +40,10 @@ class AddTaskList extends StatelessWidget {
           },
           decoration: InputDecoration(
             hintText: hintText,
+            hintStyle: GoogleFonts.montserrat(),
             border: const OutlineInputBorder(),
             focusedBorder: const OutlineInputBorder(
-              borderSide: BorderSide(
-                color: purple,
-              ),
+              borderSide: BorderSide(color: purple),
             ),
           ),
           cursorColor: purple,
@@ -73,10 +71,7 @@ class AddTaskList extends StatelessWidget {
               ),
               child: Text(
                 buttomText,
-                style: const TextStyle(
-                  color: lightPurple,
-                  fontSize: 18,
-                ),
+                style: GoogleFonts.montserrat(color: lightPurple, fontSize: 18),
               ),
             ),
           ),

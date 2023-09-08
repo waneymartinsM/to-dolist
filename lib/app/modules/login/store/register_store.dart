@@ -31,6 +31,6 @@ abstract class RegisterStoreBase with Store {
       return await repository.registerUser(model, user);
     } else {
       return false;
-     }
+    }
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 import 'package:todolist/app/utils/colors.dart';
 
@@ -8,15 +9,11 @@ alertDialog(context, AlertType type, String title, String text) {
     type: AlertType.none,
     title: title,
     desc: text,
-    style: const AlertStyle(
+    style: AlertStyle(
       backgroundColor: lightPurple,
-      titleStyle: TextStyle(
-        color: darkPurple,
-        fontWeight: FontWeight.bold,
-      ),
-      descStyle: TextStyle(
-        color: darkPurple,
-      ),
+      titleStyle: GoogleFonts.montserrat(
+          color: darkPurple, fontWeight: FontWeight.bold),
+      descStyle: GoogleFonts.montserrat(color: darkPurple),
     ),
     buttons: [
       DialogButton(
@@ -24,13 +21,8 @@ alertDialog(context, AlertType type, String title, String text) {
         splashColor: Colors.transparent,
         width: 120,
         color: darkPurple,
-        child: const Text(
-          "Ok",
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 20,
-          ),
-        ),
+        child: Text("Ok",
+            style:  GoogleFonts.montserrat(color: Colors.white, fontSize: 20)),
         onPressed: () => Navigator.pop(context),
       )
     ],

@@ -12,11 +12,6 @@ class HomeModule extends Module {
   @override
   final List<ModularRoute> routes = [
     ChildRoute(Modular.initialRoute, child: (_, args) => const HomePage()),
-    ChildRoute(
-      '/todoList',
-      child: (_, args) => TodoList(
-        taskData: args.data,
-      ),
-    ),
+    ChildRoute('/todoList', child: (_, args) => TodoList(taskData: args.data)),
   ];
 }

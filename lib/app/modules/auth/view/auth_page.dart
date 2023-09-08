@@ -23,11 +23,7 @@ class _AuthPageState extends State<AuthPage> {
   Widget build(BuildContext context) {
     return const Scaffold(
       backgroundColor: purple,
-      body: Center(
-        child: CircularProgressIndicator(
-          color: lightPurple,
-        ),
-      ),
+      body: Center(child: CircularProgressIndicator(color: lightPurple)),
     );
   }
 }

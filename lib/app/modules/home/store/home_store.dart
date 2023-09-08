@@ -67,7 +67,7 @@ abstract class HomeStoreBase with Store {
   int count = 0;
 
   @action
-  setCount(int value)=> count = value;
+  setCount(int value) => count = value;
 
   @action
   Future addList() async {
@@ -126,7 +126,7 @@ abstract class HomeStoreBase with Store {
   @action
   recoverUserData() async {
     bool response = _repository.checkCurrentUser();
-    if(response) {
+    if (response) {
       userModel = await _repository.recoverUserData();
     }
   }
