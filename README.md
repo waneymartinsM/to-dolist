@@ -30,7 +30,7 @@ To-Do List é um aplicativo construído em Flutter que permite aos usuários arm
 
 <p>
 <img src="screenshot/Screenshot_Add_Title.png" width="20%">
-<img src="screenshot/Screenshot_Home_Page_2.png.png" width="20%">
+<img src="screenshot/Screenshot_Home_Page_2.png" width="20%">
 <img src="screenshot/Screenshot_Add_Task.png" width="20%">
 <img src="screenshot/Screenshot_List_Task.png" width="20%">
 </p>
